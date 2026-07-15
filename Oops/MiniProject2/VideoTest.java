@@ -1,16 +1,18 @@
 public class VideoTest {
+
     public static void main(String[] args) {
-        Video video = new Video("Avatar");
 
-        System.out.println("Name: " + video.getName());
+        Video v = new Video("Java Tutorial");
 
-        video.doCheckout();
-        System.out.println("Checked Out: " + video.getCheckout());
+        System.out.println(v.getName());
 
-        video.receiveRating(4);
-        System.out.println("Rating: " + video.getRating());
+        v.doCheckout();
 
-        video.doReturn();
-        System.out.println("Checked Out: " + video.getCheckout());
+        System.out.println("Checkout: " + v.getCheckout());
+
+        v.receiveRating(5);
+
+        System.out.println("Rating: " + v.getRating());
+
     }
 }
