@@ -15,5 +15,7 @@ public class IsExactMultiple {
         System.out.print("Enter M: ");
         int m = sc.nextInt();
         System.out.println("Output: " + isExactMultiple(n, m));
-    }
+    
+    sc.close();
+}
 }

@@ -13,5 +13,7 @@ public class FibonacciLoop {
             firstTerm = secondTerm;
             secondTerm = nextTerm;
         }
-    }
+    sc.close();
 }
+}
+

@@ -23,5 +23,6 @@ public class Nonrepeated {
             }
         }
         System.out.println("\nTotal number of non-repeated digits: " + uniqueCount);
+        sc.close();
     }
 }

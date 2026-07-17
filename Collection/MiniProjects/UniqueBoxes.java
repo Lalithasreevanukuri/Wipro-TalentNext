@@ -26,9 +26,6 @@ class Box {
 public class UniqueBoxes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // TreeSet with a custom comparator to sort boxes by volume in ascending order.
-        // If volumes are equal, it compares dimensions to prevent unique boxes from being rejected.
         Set<Box> boxSet = new TreeSet<>(new Comparator<Box>() {
             @Override
             public int compare(Box b1, Box b2) {
@@ -48,7 +45,6 @@ public class UniqueBoxes {
             }
         });
 
-        // The example shows up to Box 5 details being collected
         int totalBoxes = 5;
 
         for (int i = 1; i <= totalBoxes; i++) {
@@ -66,7 +62,6 @@ public class UniqueBoxes {
             boxSet.add(new Box(length, width, height));
         }
 
-        // Print the final formatted unique box list
         System.out.println("Unique Boxes in the Set are");
         for (Box box : boxSet) {
             System.out.format("Length =%.1f Width =%.1f Height =%.1f Volume =%.2f\n",

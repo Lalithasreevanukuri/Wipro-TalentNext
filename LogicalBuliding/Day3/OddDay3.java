@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Odd {
+public class OddDay3 {
     public static int isOdd(int num) {
         if (num % 2 != 0)
             return 2;

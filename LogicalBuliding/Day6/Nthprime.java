@@ -38,5 +38,6 @@ public class NthPrime {
         System.out.print("Enter n: ");
         int n = scanner.nextInt();
         System.out.println("The " + n + "th prime number is " + nthPrime(n));
+        scanner.close();
     }
 }
